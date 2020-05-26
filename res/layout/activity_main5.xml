@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#E0ECFF"
+    android:orientation="vertical"
+    tools:context=".Main5Activity">
+
+
+    <TextView
+        android:id="@+id/textViewCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:text="2. Расходы на закуп"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextViewTitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            android:text="Введите дату:"
+            android:textSize="14sp"></TextView>
+
+        <EditText
+            android:id="@+id/ageY"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewTitle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="День
+"
+            android:textSize="14sp"></TextView>
+
+        <EditText
+            android:id="@+id/ageM"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewTitle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Месяц"
+            android:textSize="14sp"></TextView>
+
+        <EditText
+            android:id="@+id/ageMh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewTitle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Год"
+            android:textSize="14sp"></TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="3dp"
+            android:text="Выберите количество расходов:"
+            android:textSize="14sp"></TextView>
+
+        <Spinner
+            android:id="@+id/spinnerZ"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textStyle="bold"></Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_computeZ"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#EDC9C3"
+        android:text="Выбрать"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup1"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 1"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup2"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 2"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup3"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 3"
+
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup4"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 4"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup5"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 5"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup6"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 6"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup7"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 7"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup8"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 8"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup9"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 9"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/zakup10"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 10"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/zakup11"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 11"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/zakup12"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 12"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/zakup13"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 13"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/zakup14"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        android:hint="Расход 14"
+        android:inputType="number"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_menu2"
+            android:layout_width="78dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="28dp"
+            android:background="#EDC9C3"
+            android:text="Назад"
+            android:textSize="12sp" />
+
+        <Button
+
+            android:id="@+id/btn_addZ"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:background="#EDC9C3"
+            android:text="Расчитать"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+
+            android:id="@+id/btn_saveZ"
+            android:layout_width="105dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="35dp"
+            android:background="#EDC9C3"
+            android:text="Сохранить"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="43dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewOst"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="7dp"
+            android:text="Расходы на закуп: "
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textItogoZ"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="0 тенге"
+            android:layout_marginTop="7dp"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

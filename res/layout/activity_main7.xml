@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="#E0ECFF"
+    android:orientation="vertical"
+    tools:context=".Main7Activity">
+
+
+    <TextView
+        android:id="@+id/textViewK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="5. Консигнации"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextViewTitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            android:text="Введите дату:"
+            android:textSize="14sp"></TextView>
+
+        <EditText
+            android:id="@+id/ageY"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewTitle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="День
+"
+            android:textSize="14sp"></TextView>
+
+        <EditText
+            android:id="@+id/ageM"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewTitle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Месяц"
+            android:textSize="14sp"></TextView>
+
+        <EditText
+            android:id="@+id/ageMh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TextViewTitle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Год"
+            android:textSize="14sp"></TextView>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/userN"
+        android:layout_width="117dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+
+        android:hint="User name"
+        android:inputType="text"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="117dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="Пароль"
+        android:inputType="text"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#EDC9C3"
+        android:text="Логин"
+        android:onClick="onLogin"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btn_addKS"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#EDC9C3"
+        android:text="Расчитать"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/kon1"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/txtkon1"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:text=" 0 тенге"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/kon2"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/txtkon2"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:text=" 0 тенге"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/kon3"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/txtkon3"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:text=" 0 тенге"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewOsK"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="50dp"
+            android:background="#EFE8BB"
+            android:text="Остаток на кассе: "
+            android:textColorHighlight="#EA9393"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/txtOsKS"
+            android:layout_width="72dp"
+            android:layout_height="25dp"
+            android:background="#EFE8BB"
+            android:text=" 0 тенге"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_menu3KS"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#EDC9C3"
+        android:text="Назад в меню"
+        android:textSize="10sp" />
+
+</LinearLayout>
